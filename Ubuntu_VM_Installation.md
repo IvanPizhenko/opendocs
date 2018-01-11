@@ -6,16 +6,19 @@ Xubuntu flavor suitable for the small Java, C\#, C++ development, like you need
 to do. Although looking a bit huge, the entire procedure should take you just
 2-3 hours (unlike installation of Windows and related developer tools like
 Visual Studio, which may get day or two with application of all updates).
+I recommend using exactly *Xubuntu* because it is based on XFCE which is 
+more lighweight than Unity, Gnome or KDE, i.e. generally works faster. 
+Alternatively you can use *Lubuntu* (based on LXDE), but my personal preference
+among these two is Xubuntu.
 
 \#1 Download Xubuntu 16.04.3 LTS image from
 here http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/16.04/release/xubuntu-16.04.3-desktop-amd64.iso
 
-\#2 Make sure you have most recent VirtualBox 5.1.28.
+\#2 Make sure you have most recent VirtualBox (check latest version on the https://www.virtualbox.org).
 
-If not, download and install fresh one.
+If not, download and install latest one.
 
-After that start VirtualBox GUI and let it install or update virtual box
-extensions
+After that start VirtualBox GUI and let it install or update virtual box extensions.
 
 \#3 Create new VM parameters:
 
@@ -25,7 +28,7 @@ extensions
 
 \#4 After that tune VM:
 
--   Memory 3-4 GB
+-   Memory 4 GB
 
 -   Number of CPU 2
 
@@ -102,7 +105,7 @@ extensions
 
     -   sudo apt-get update
 
-    -   sudo apt-get install -y build-essential dkms
+    -   sudo apt-get install -y dkms build-essential
 
     -   sudo apt-get dist-upgrade -y
 
@@ -112,7 +115,7 @@ extensions
 
 -   after reboot login again
 
--   In the VBOX VM menu choose Devices-\>Insert Guest Additions CD image
+-   In the VirtualBox VM menu choose Devices-\>Insert Guest Additions CD image
 
 -   Wait for CD mounted - OS will popup File Browser
 
@@ -120,7 +123,7 @@ extensions
 
     -   sudo apt-get autoremove -y
 
-    -   cd /media/user1/VBOXADDITIONS_... (according to current version)
+    -   cd /media/user1/VBOX... (according to current version)
 
     -   sudo ./VBoxLinuxAdditions.run
 
@@ -167,3 +170,7 @@ extensions
     -   sudo apt-get install oracle-java8-installer (this one will ask to accept
         Oracle Binary Code license, you will hav to do it in order to install
         Oracle JDK)
+
+- Install latest version on Mono framework according to instructions for Ubuntu 16.04 provided here http://www.mono-project.com/download/#download-lin
+
+- Optionally install Visual Studio Code using instructions provided here https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions
