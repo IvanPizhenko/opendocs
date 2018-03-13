@@ -1,0 +1,50 @@
+After installing system with bsdinstall, do following
+
+# Network (/etc/rc.conf)
+ifconfig_em0="DHCP"
+
+# (/etc/rc.conf) Possible second network adapter with static IP address, like this:
+ifconfig_em1="inet 192.168.1.3 netmask 255.255.255.0"
+
+# System tools (as root)
+pkg install sudo bash vim nano mc lsof wget curl
+
+# New user: add to groups: wheel and operator.
+pw usermod your_user_name -G wheel,operator
+
+# Edit /usr/local/etc/sudoers, uncomment
+# %wheel ....
+# to enable members of group wheel to control OS.
+vim /usr/local/etc/sudoers
+
+# Desktop environment:
+sudo pkg install virtualbox-ose-additions kde xfce firefox xrandr x11-drivers/xf86-input-mouse x11-drivers/xf86-input-keyboard
+
+# /etc/fstab
+proc		/proc	procfs	rw		0	0
+/dev/cd0	/cdrom	cd9660	ro,noauto	0	0
+
+# Add to /etc/rc.conf
+vboxguest_enable="YES"
+vboxservice_enable="YES"
+dbus_enable="YES"
+hald_enable="YES"
+local_startup="${local_startup} /usr/local/kde4/etc/rc.d"
+kdm4_enable="YES"
+
+# Development tools:
+sudo pkg install git mercurial clang gcc autoconf automake gmake cmake
+
+# Full sample of /etc/rc.conf
+hostname="freebsd11"
+ifconfig_em0="DHCP"
+ifconfig_em1="inet 192.168.1.3 netmask 255.255.255.0"
+sshd_enable="YES"
+moused_enable="YES"
+dumpdev="AUTO"
+vboxguest_enable="YES"
+vboxservice_enable="YES"
+hald_enable="YES"
+dbus_enable="YES"
+local_startup="${local_startup} /usr/local/kde4/etc/rc.d"
+kdm4_enable="YES"
