@@ -1,5 +1,10 @@
 After installing system with bsdinstall, do following
 
+# Add own hostname to /etc/hosts localhost address entry.
+# Example:
+::1                     localhost localhost.my.domain freebsd-11
+127.0.0.1               localhost localhost.my.domain freebsd-11
+
 # Network (/etc/rc.conf)
 ifconfig_em0="DHCP"
 
