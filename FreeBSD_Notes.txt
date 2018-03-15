@@ -40,6 +40,23 @@ kdm4_enable="YES"
 # Development tools:
 sudo pkg install git mercurial clang gcc autoconf automake gmake cmake
 
+# Add samba services
+samba_server_enable="YES"
+smbd_enable="YES"
+nmbd_enable="YES"
+winbindd_enable="YES"
+
+# Configure samba as descrined here
+https://lauri.xn--vsandi-pxa.com/2017/03/freebsd-pxe-install.html
+# Notes:
+# - in FreeBSD11 unstall samba46 instead of samba44
+# - if you don't have/need AD, just take default content of Ubuntu's 
+# /etc/samba/smb.conf for the  /usr/local/etc/smb4.conf 
+# (you must install samba on Ubuntu to get it)
+
+# After that do not forget to add "wins" resolve method to /etc/nsswitch.conf
+hosts: files wins dns
+
 # Full sample of /etc/rc.conf
 hostname="freebsd11"
 ifconfig_em0="DHCP"
@@ -53,3 +70,8 @@ hald_enable="YES"
 dbus_enable="YES"
 local_startup="${local_startup} /usr/local/kde4/etc/rc.d"
 kdm4_enable="YES"
+mdnsd_enable="YES"
+samba_server_enable="YES"
+smbd_enable="YES"
+nmbd_enable="YES"
+winbindd_enable="YES"
