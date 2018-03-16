@@ -12,7 +12,12 @@ ifconfig_em0="DHCP"
 ifconfig_em1="inet 192.168.1.3 netmask 255.255.255.0"
 
 # System tools (as root)
-pkg install sudo bash vim nano mc lsof wget curl
+pkg install sudo vim nano mc lsof wget curl
+
+# Intall bash
+pkg install bash
+# Add devfs for bash (/etc/fstab)
+fdesc /dev/fd fdescfs rw 0 0
 
 # New user: add to groups: wheel and operator.
 pw usermod your_user_name -G wheel,operator
