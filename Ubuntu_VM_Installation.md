@@ -11,8 +11,8 @@ more lighweight than Unity, Gnome or KDE, i.e. generally works faster.
 Alternatively you can use *Lubuntu* (based on LXDE), but my personal preference
 among these two is Xubuntu.
 
-\#1 Download Xubuntu 16.04.3 LTS image from
-here http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/16.04/release/xubuntu-16.04.3-desktop-amd64.iso
+\#1 Download Xubuntu 16.04.4 LTS image from
+here http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/16.04/release/xubuntu-16.04.4-desktop-amd64.iso
 
 \#2 Make sure you have most recent VirtualBox (check latest version on the https://www.virtualbox.org).
 
@@ -36,7 +36,7 @@ After that start VirtualBox GUI and let it install or update virtual box extensi
 
 -   Video memory - 128MB (maximum)
 
--   Drives: inject XUbuntu 16.04.3 ISO image which you downloaded before into CD
+-   Drives: inject XUbuntu 16.04 ISO image which you downloaded before into virtual CD
     drive
 
 -   Shared clipboard: bidirections
