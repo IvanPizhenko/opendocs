@@ -11,6 +11,10 @@ ifconfig_em0="DHCP"
 # (/etc/rc.conf) Possible second network adapter with static IP address, like this:
 ifconfig_em1="inet 192.168.1.3 netmask 255.255.255.0"
 
+# Update
+freebsd-update fetch
+freebsd-update install
+
 # System tools (as root)
 pkg install sudo vim nano mc lsof wget curl
 
