@@ -100,7 +100,7 @@ among these two is exactly *Xubuntu*.
         - Press Ctrl+O, hit Enter, this will write file
         - Press Ctrl+X, you will exit editor
 
-7. Install development softare:
+7. Install development and other useful software:
     - After reboot: login. Open teminal, supply following commands:
     - Install useful utilities and development tools:
     ```shell
