@@ -101,22 +101,23 @@ among these two is exactly *Xubuntu*.
         - Press Ctrl+X, you will exit editor
 
 7. Install development and other useful software:
-    - After reboot: login. Open teminal, supply following commands:
+    - After reboot: login, open teminal.
     - Install useful utilities and development tools:
     ```shell
-    sudo apt-get install -y gedit kate konsole kdevelop vim mc \
+    sudo apt install gedit kate konsole kdevelop vim mc \
         p7zip-full ctags git cvs subversion mercurial perl python tcl ruby \
-        clang-3.8  monodevelop
+        clang-3.8 monodevelop
     ```
     - Install Oracle JDK 8
     ```shell
     sudo add-apt-repository ppa:webupd8team/java
     ```
-    (will ask to add PGP key do it)
+    (will ask to add PGP key - do it)
     ```shell
-    sudo apt-get update
-     sudo apt-get install oracle-java8-installer  sudo apt-get install oracle-java8-set-default
+    sudo apt update
+    sudo apt install oracle-java8-installer
+    sudo apt install oracle-java8-set-default
     ```
-    (this one will ask to accept Oracle Binary Code license, you will hav to do it in order to install Oracle JDK)
+    (will ask to accept Oracle Binary Code license, you have to do it in order to install Oracle JDK)
     - Install latest version on Mono framework according to instructions for Ubuntu 16.04 provided here http://www.mono-project.com/download/#download-lin
     - Optionally install Visual Studio Code using instructions provided here https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions
