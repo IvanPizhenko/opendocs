@@ -19,7 +19,7 @@ among these two is exactly *Xubuntu*.
 3. Start VirtualBox GUI and let it install or update VirtualBox extensions.
 4. Create new VM parameters:
     - choose OS Type: Linux, Distribution: Ubuntu 64-bit
-    - create new disk, disk type VDI, dynamic, size 40 GB.
+    - create new disk, disk type VDI, dynamic, size 30-40 GB.
 5. Tune VM options:
     - Memory 4-6 GB.
     - Number of CPU 2.
