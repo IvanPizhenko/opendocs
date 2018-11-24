@@ -1,11 +1,10 @@
 # Xubuntu Installation
-I recommend to use Xbuntu. This is one of officially suppoted Ubuntu distributions,
-that use XFCE graphical desktop. This desktop system is more ligheight than GNOME
-and Unity, that comes with normal Ubuntum therefore it will take less resources
-and provide you more room to work on your VM.
+I recommend to use Xbuntu. This is one of officially supported Ubuntu distributions, that uses XFCE graphical desktop system. 
+This desktop system is more lightweight than Unity that comes with normal Ubuntu 16.04,
+therefore it will take less resources and provide you more room to work on your VM.
 
-Use my general online instructon [here](https://github.com/ivanp2015/opendocs/blob/master/Ubuntu_VM_Installation.md)
-But STOP at the step saying: "Install WINS support". I.e. do all steps before it, but do not continue.
+Use my general online instructons for installing Xubuntu [here](https://github.com/ivanp2015/opendocs/blob/master/Ubuntu_VM_Installation.md). 
+But **STOP** at the step saying: "Install WINS support". I.e. do all steps before it, but do not continue.
 
 # Install Some Useful Software
 
