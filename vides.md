@@ -4,7 +4,7 @@ that use XFCE graphical desktop. This desktop system is more ligheight than GNOM
 and Unity, that comes with normal Ubuntum therefore it will take less resources
 and provide you more room to work on your VM.
 
-Use my general online instructon [here](https://github.com/ivanp2015/opendocs/blob/master/Ubuntu_VM_Installation.md){target="_blank"}
+Use my general online instructon [here](https://github.com/ivanp2015/opendocs/blob/master/Ubuntu_VM_Installation.md)
 But STOP at the step saying: "Install WINS support". I.e. do all steps before it, but do not continue.
 
 # Install Some Useful Software
@@ -100,7 +100,7 @@ numpy.core._internal.AxisError: axis 1 is out of bounds for array of dimension 1
 which I believe require significanly deeper understanding of code to fix it.
 
 I only can recommend to contact NanoTCAD directly to obtain working version.
-Contact info is [here](http://vides.nanotcad.com/vides/contact-us){target="_blank"}.
+Contact info is [here](http://vides.nanotcad.com/vides/contact-us).
 
 6. Install IDE:
 ```
