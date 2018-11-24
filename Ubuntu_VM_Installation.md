@@ -13,7 +13,7 @@ more lighweight than Unity, Gnome or KDE, i.e. generally works faster.
 Alternatively you can use *Lubuntu* (based on LXDE), but my personal preference
 among these two is exactly *Xubuntu*.
 
-1. Download Xubuntu 16.04.4 LTS image from here: [Xubuntu 16.04.4 AMD 64 ISO IMAGE](http://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/16.04/release/xubuntu-16.04.4-desktop-amd64.iso)
+1. Download Xubuntu 16.04.4 LTS image from here: [Xubuntu 16.04.5 AMD 64 ISO IMAGE](http://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/16.04/release/xubuntu-16.04.5-desktop-amd64.iso)
 2. Download and install latest stable VirtualBox (check latest version on the
    [VirtualBox Webiste](https://www.virtualbox.org).
 3. Start VirtualBox GUI and let it install or update VirtualBox extensions.
