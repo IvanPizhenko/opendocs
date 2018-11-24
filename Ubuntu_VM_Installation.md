@@ -25,10 +25,10 @@ among these two is exactly *Xubuntu*.
     - Number of CPU 2.
     - Enable PAE/NX.
     - Video memory - 128MB (maximum).
-    - Drives: inject previously downloaded XUbuntu 16.04 ISO image, which
-      you've downloaded, before into virtual CD drive.
     - Shared clipboard: bidirections
     - Shared drag and drop: bidirectional
+    - Drives: inject previously downloaded XUbuntu 16.04 ISO image, which
+      you've downloaded, before into virtual CD drive.
 6. Install OS:
     - Start VM
     - Click on the icon on the bottom of black screen.
@@ -38,7 +38,7 @@ among these two is exactly *Xubuntu*.
     - Check both boxes "Download uppdates" and "Install 3rd party software".
     - When asked for disk layout choose "something else".
     - Create new partition table.
-    - Add swap partition of size 4096 MB in the End of free space.
+    - Add swap partition of size 4096 MB in the *End* of free space.
     - Add ext4 partition mounted at / for the rest free space.
     - Proceed with Next, confirm to write changes to drive.
     - Choose your location by clicking on the map.
@@ -74,7 +74,7 @@ among these two is exactly *Xubuntu*.
     - Open teminal, supply following commands:
     ```shell
     sudo apt-get autoremove -y
-    cd /media/user1/VBOX... (according to current version)
+    cd /media/user1/VBox... (according to current version)
     sudo ./VBoxLinuxAdditions.run
     sudo usermod -a -G vboxsf user1
     cd ~
