@@ -147,8 +147,8 @@ media.cubeb.backend=sndio
 ```
 
 Links:
-https://community.kde.org/FreeBSD/Setup
-https://forums.freebsd.org/threads/firefox-57-0-4-no-sound.64131/
-https://forums.freebsd.org/threads/no-sound-from-browsers.53184/
-https://forums.freebsd.org/threads/new-to-freebsd-startx-fails-with-cannot-run-in-framebuffer-mode-help.68882/
+- https://community.kde.org/FreeBSD/Setup
+- https://forums.freebsd.org/threads/firefox-57-0-4-no-sound.64131/
+- https://forums.freebsd.org/threads/no-sound-from-browsers.53184/
+- https://forums.freebsd.org/threads/new-to-freebsd-startx-fails-with-cannot-run-in-framebuffer-mode-help.68882/
 
