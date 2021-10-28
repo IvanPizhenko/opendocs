@@ -1,6 +1,17 @@
 ```shell
+# if DNS doesn't work check /etc/resolv.conf
+nameserver <your-gateway-ip-addr>
+
+# If Relatek RTL8111
+# /etc/rc.local
+#!/bin/sh
+ifconfig re0 down
+ifconfig re0 up
+# end of /etc/rc.local
+
 # as root
-pkg install bash zsh sudo sshguard git mercurial subversion mc vim nano
+pkg bootstrap
+pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano
 pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass
 pkg install vscode kdiff3 kdevelop
 pw usermod <user> -G video,wheel,operator
@@ -84,6 +95,7 @@ perm dsp4.1 0666
 
 cat /dev/sndstat
 
+# Sample output:
 Installed devices:
 pcm0: <Intel Haswell (HDMI/DP 8ch)> (play)
 pcm1: <Realtek ALC662 (Rear Analog)> (play/rec) default
@@ -91,7 +103,7 @@ pcm1: <Realtek ALC662 (Rear Analog)> (play/rec) default
 # Then
 
 # Sound
-sudo sysctl dev.hdac.1.polling=<N>
+sudo sysctl dev.hdac.<N>.polling=1
 sudo sysctl hw.snd.default_unit=<N>
 
 # Don't automatically use new sound device
