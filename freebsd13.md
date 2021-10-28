@@ -21,7 +21,7 @@ pkg info --pkg-message <package-name>
 As root run:
 ```
 pkg bootstrap
-pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano gmake cmake
+pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano gmake cmake openjdk11
 pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass
 pkg install vscode kdiff3 kdevelop
 pw usermod <user> -G video,wheel,operator
@@ -34,6 +34,8 @@ pw usermod <user> -G vboxsf
 proc  /proc procfs rw 0 0
 # if have cd/dvd drive
 /dev/cd0	/cdrom	cd9660	ro,noauto	0	0
+# Java
+fdesc /dev/fd fdescfs rw 0 0
 
 # Then
 mount -t procfs proc /proc
@@ -51,9 +53,6 @@ Create `~/startwm.sh` with content:
 exec ck-launch-session startplasma-x11
 ```
 Then `chmod +x startwm.sh`
-
-
-
 
 Full `/etc/rc.conf`
 ```ini
