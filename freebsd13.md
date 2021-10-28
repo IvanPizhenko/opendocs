@@ -10,11 +10,18 @@ ifconfig re0 up
 # end of /etc/rc.local
 
 # as root
+# pkg is /usr/sbin/pkg
+# show info:
+pkg info --pkg-message <package-name>
 pkg bootstrap
-pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano
+pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano gmake cmake
 pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass
 pkg install vscode kdiff3 kdevelop
 pw usermod <user> -G video,wheel,operator
+
+# on virtualbox
+pkg install virtualbox-ose-additions
+pw usermod <user> -G vboxsf
 
 # In /etc/fstab
 proc  /proc procfs rw 0 0
