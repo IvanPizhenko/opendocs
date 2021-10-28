@@ -1,9 +1,15 @@
 ```shell
 # as root
-pkg install sudo sshguard git mercurial subversion mc vim nano
-pkg install kde5 sddm xorg drm-kmod vlc firefox thunderbird chromium keepass
+pkg install bash zsh sudo sshguard git mercurial subversion mc vim nano
+pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass
 pkg install vscode kdiff3 kdevelop
 pw usermod <user> -G video,wheel,operator
+
+# In /etc/fstab
+proc  /proc procfs rw 0 0
+
+# Then
+mount -t procfs proc /proc
 
 # In /usr/local/etc/sudoers
 # uncomment: %wheel ....
