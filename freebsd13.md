@@ -2,7 +2,7 @@
 # if DNS doesn't work check /etc/resolv.conf
 nameserver <your-gateway-ip-addr>
 
-# If Relatek RTL8111
+# If network card is based on Relatek RTL8111
 # /etc/rc.local
 #!/bin/sh
 ifconfig re0 down
