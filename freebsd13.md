@@ -60,6 +60,8 @@ kern.ipc.semmni=40
 kern.ipc.semmns=300
 ```
 
+KDE: when logging in, avoid the Plasma (Wayland) … default that's presented by sddm – for Plasma, Wayland is not yet reliable.
+
 No sound:
 
 ```shell
@@ -115,4 +117,5 @@ In Firefox `about:config`:
 ```
 media.cubeb.backend=sndio
 ```
+
 
