@@ -1,18 +1,25 @@
+If DNS doesn't work check `/etc/resolv.conf`:
 ```shell
-# if DNS doesn't work check /etc/resolv.conf
 nameserver <your-gateway-ip-addr>
+```
 
-# If network card is based on Relatek RTL8111
-# /etc/rc.local
+If network card is based on Relatek RTL8111 create `/etc/rc.local`:
+
+```shell
 #!/bin/sh
 ifconfig re0 down
 ifconfig re0 up
-# end of /etc/rc.local
+```
 
-# as root
-# pkg is /usr/sbin/pkg
-# show info:
+`pkg` is `/usr/sbin/pkg`
+
+Show post-install info:
+```shell
 pkg info --pkg-message <package-name>
+```
+
+As root run:
+```
 pkg bootstrap
 pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano gmake cmake
 pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass
@@ -25,14 +32,28 @@ pw usermod <user> -G vboxsf
 
 # In /etc/fstab
 proc  /proc procfs rw 0 0
+# if have cd/dvd drive
+/dev/cd0	/cdrom	cd9660	ro,noauto	0	0
 
 # Then
 mount -t procfs proc /proc
+```
 
-# In /usr/local/etc/sudoers
+In `/usr/local/etc/sudoers`:
+```shell
 # uncomment: %wheel ....
 
 ```
+
+Create `~/startwm.sh` with content:
+```shell
+#!/bin/sh
+exec ck-launch-session startplasma-x11
+```
+Then `chmod +x startwm.sh`
+
+
+
 
 Full `/etc/rc.conf`
 ```ini
@@ -125,4 +146,9 @@ In Firefox `about:config`:
 media.cubeb.backend=sndio
 ```
 
+Links:
+https://community.kde.org/FreeBSD/Setup
+https://forums.freebsd.org/threads/firefox-57-0-4-no-sound.64131/
+https://forums.freebsd.org/threads/no-sound-from-browsers.53184/
+https://forums.freebsd.org/threads/new-to-freebsd-startx-fails-with-cannot-run-in-framebuffer-mode-help.68882/
 
