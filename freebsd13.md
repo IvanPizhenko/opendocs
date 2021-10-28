@@ -91,6 +91,10 @@ sudo sysctl hw.snd.default_unit=<N>
 # Don't automatically use new sound device
 sudo sysctl hw.snd.default_auto=0
 
+```
 
+In Firefox `about:config`:
+```
+media.cubeb.backend=sndio
 ```
 
