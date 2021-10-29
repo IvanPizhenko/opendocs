@@ -22,7 +22,7 @@ As root run:
 ```
 pkg bootstrap
 pkg install en-freebsd-doc bash zsh sudo sshguard git mercurial subversion mc vim nano gmake cmake openjdk11
-pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass libreoffice krita gimp
+pkg install kde5 sddm xorg xrdp drm-kmod vlc firefox thunderbird chromium keepass libreoffice krita gimp telegram-dekstop
 pkg install vscode kdiff3 kdevelop
 pw usermod <user> -G video,wheel,operator
 
