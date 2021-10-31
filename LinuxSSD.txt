@@ -1,0 +1,5 @@
+From here: https://askubuntu.com/a/382418/168448
+
+sudo apt-get install smartmontools
+sudo smartctl -a /dev/sda | grep Media_Wearout_Indicator
+sudo smartctl -a /dev/sda
