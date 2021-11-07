@@ -10,3 +10,5 @@ for m in $(cat missing | awk '{print $5}'); do
 	f=$(basename $m)
 	cp -f "i915/$f" "$m"
 done
+
+update-initramfs -u -k all
