@@ -1,4 +1,29 @@
-# PowerShell Profile Signing
+# Powershell Profile 
+
+## Git Functions
+
+```powerhsell
+# $Home\Documents\WindowsPowerShell\Profile.ps1
+
+function gitwip
+{
+  git status
+  git add -u
+  git commit -m wip
+  git push
+}
+
+function gitfix
+{
+  git status
+  git add -u
+  git commit -m fix
+  git push
+}
+
+```
+
+## PowerShell Profile Signing
 
 Create root certificate
 
