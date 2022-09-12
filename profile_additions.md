@@ -15,4 +15,19 @@ parse_git_branch() {
 
 PS1=${PS1%?}"\[\033[33m\]\$(parse_git_branch)\[\033[00m\] "
 export PS1
+
+gitfix() {
+     git status
+     git add -u
+     git commit -m fix
+     git push
+}
+
+gitwip() {
+     git status
+     git add -u
+     git commit -m wip
+     git push
+}
+
 ```
