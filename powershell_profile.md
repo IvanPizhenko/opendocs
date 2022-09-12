@@ -4,6 +4,7 @@
 
 ```powerhsell
 # $Home\Documents\WindowsPowerShell\Profile.ps1
+# $Home\Documents\PowerShell\Profile.ps1
 
 function gitwip
 {
