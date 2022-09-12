@@ -16,3 +16,4 @@ git config --global alias.fpush "push -f"
 :: Additions 2022-09-12
 git config --global alias.rpo "remote prune origin"
 git config --global alias.rmbr "branch --delete"
+git config --global alias.am "commit --amend -m"
