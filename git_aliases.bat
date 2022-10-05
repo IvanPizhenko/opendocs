@@ -12,10 +12,7 @@ git config --global alias.mkbr "checkout -b"
 git config --global alias.rmbr "branch --delete"
 git config --global alias.track "checkout --track"
 git config --global alias.amd "commit --amend --no-edit --date=now"
+git config --global alias.am "commit --amend -m"
 git config --global alias.fpush "push -f"
-
-:: Additions 2022-09-12
 git config --global alias.rpo "remote prune origin"
 git config --global alias.rpu "remote prune upstream"
-git config --global alias.rmbr "branch --delete"
-git config --global alias.am "commit --amend -m"
