@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -e
+set -o pipefail
+
 if [[ $# -lt 2 ]]; then
   echo "error: too few arguments" >&2
   echo "usage: $0 EXPORT_TYPE FINGERPRINT [OUTPUT_FILE]" >&2
@@ -8,11 +11,17 @@ fi
 
 _export_type=$1
 
-if [[ "$_export_type" == "pub" || "$_export_type" == "sec" ]]; then
+if [[ "$_export_type" == "pub" || "$_export_type" == "sec" || "$_export_type" == "all" ]]; then
   echo -n ""
 else
   echo "error: invalid export type, must be 'pub' or 'sec'." >&2
   exit 1
+fi
+
+if [[ "$_export_type" == "all" ]]; then
+  "$0" pub "$2" "$3"
+  "$0" sec "$2" "$4"
+  exit 0
 fi
 
 _fingerprint=$2
