@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+set -o pipefail
+
+# See for more details:
+# https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html
+
+if [ $# -lt 2 ]; then
+  echo "error: missing required parameters" >&2
+  echo "usage: $0 REAL_NAME EMAIL" >&2
+  exit 1
+fi
+
+_tempfile=$(mktemp)
+
+cat > "$_tempfile" <<EOF
+%echo Generating a basic OpenPGP key
+Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: RSA
+Subkey-Length: 4096
+Name-Real: $1
+Name-Email: $2
+Expire-Date: 0
+%commit
+%echo Done
+EOF
+
+cat "$_tempfile"
+
+gpg --batch --generate-key "${_tempfile}"
+rm -f "$_tempfile"
