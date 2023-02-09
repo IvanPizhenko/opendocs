@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+if [[ $# -lt 2 ]]; then
+  echo "error: too few arguments" >&2
+  echo "usage: $0 EXPORT_TYPE FINGERPRINT [OUTPUT_FILE]" >&2
+  exit 1
+fi
+
+_export_type=$1
+
+if [[ "$_export_type" == "pub" || "$_export_type" == "sec" ]]; then
+  echo -n ""
+else
+  echo "error: invalid export type, must be 'pub' or 'sec'." >&2
+  exit 1
+fi
+
+_fingerprint=$2
+
+_file=$3
+if [[ -z $_file ]]; then
+  if [[ "$_export_type" == "pub" ]]; then
+    _ext=.pub.asc
+  else
+    _ext=.prv.asc
+  fi
+  _file="${_fingerprint}${_ext}"
+fi
+
+if [[ "$_export_type" == "pub" ]]; then
+  exec gpg --export --armor "$_fingerprint" > "$_file"
+else
+  exec gpg --export-secret-key --armor "$_fingerprint" > "$_file"
+fi
