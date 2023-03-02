@@ -8,7 +8,7 @@ git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.visual '!gitk'
-git config --global alias.syncbr 'remote update --prune'
+git config --global alias.sync 'remote update --prune'
 git config --global alias.mkbr 'checkout -b'
 git config --global alias.rmbr 'branch --delete'
 git config --global alias.track 'checkout --track'
