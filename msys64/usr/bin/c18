@@ -1,0 +1,10 @@
+#!/bin/sh
+fl="-std=c18"
+for opt; do
+  case "\$opt" in
+    -std=c18|-std=iso9899:2018) fl="";;
+    -std=*) echo "`basename \$0` called with non ISO C18 option \$opt" >&2
+        exit 1;;
+  esac
+done
+exec /usr/bin/gcc $fl ${1+"$@"}

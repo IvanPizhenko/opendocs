@@ -1,0 +1,10 @@
+#!/bin/sh
+fl="-std=c17"
+for opt; do
+  case "\$opt" in
+    -std=c17|-std=iso9899:2017) fl="";;
+    -std=*) echo "`basename \$0` called with non ISO C17 option \$opt" >&2
+        exit 1;;
+  esac
+done
+exec /clang64/bin/clang $fl ${1+"$@"}

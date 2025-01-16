@@ -1,0 +1,10 @@
+#!/bin/sh
+fl="-std=c23"
+for opt; do
+  case "\$opt" in
+    -std=c23|-std=iso9899:2024) fl="";;
+    -std=*) echo "`basename \$0` called with non ISO C23 option \$opt" >&2
+        exit 1;;
+  esac
+done
+exec /clangarm64/bin/clang $fl ${1+"$@"}
