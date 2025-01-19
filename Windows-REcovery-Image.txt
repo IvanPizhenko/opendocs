@@ -1,0 +1,33 @@
+https://www.reddit.com/r/sysadmin/comments/16sgdqb/windows_2022_move_recovery_to_the_end_of_the_drive/?rdt=62489
+
+Basically, here are the steps:
+
+Disable the existing Windows Recovery Partition by running reagentc /disable
+
+Use diskpart to remove the recovery partition
+
+list disk
+
+select disk # where # is the disk needing the recovery partition removed
+
+list partition
+
+select partition # where # is the recovery partition
+
+delete partition override to force deletion of the recovery partition
+
+Expand the disk using Disk Management, leaving ~1024 MB at the end of the drive for recreating the recovery partition
+
+Create New Simple Volume for Recovery, NTFS, no drive letter
+
+use diskpart to set the recovery partition attributes
+
+list partition
+
+select partition # where # is the new recovery partition
+
+For GPT disks run set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac & gpt attributes=0x8000000000000001
+
+For MBR disks, run set id=27
+
+Re-enable the recovery partition by running reagentc /enable
