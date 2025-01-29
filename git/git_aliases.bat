@@ -1,6 +1,6 @@
 @echo off
 
-::begin
+:: begin
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
@@ -19,4 +19,9 @@ git config --global alias.rpo "remote prune origin"
 git config --global alias.rpu "remote prune upstream"
 git config --global alias.rmrb "push origin --delete"
 git config --global alias.rmrt "push origin --delete"
-::end
+:: end
+
+:: special
+git config --global alias.setghname "config user.name ^"Ivan Pizhenko^""
+git config --global alias.setghemail "config user.email ^"IvanPizhenko@users.noreply.github.com^""
+:: end special
