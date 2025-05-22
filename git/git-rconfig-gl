@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+echo "Setting up repository git configuration for GitLab..."
+git config user.name "Ivan Pizhenko"
+git config user.email "IvanPizhenko@users.noreply.gitlab.com"
+git config apply.whitespace fix
+
+echo "Operation completed."
+date

@@ -1,8 +1,10 @@
 #!/bin/sh
 set -e
+
+echo "Adding and pushing all changes in the all known modified files as [fix]..."
 git status
 git add -u
-git commit -m wip
+git commit -m fix
 git push
-echo "Operation completed"
+echo "Operation completed."
 date
