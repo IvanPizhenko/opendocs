@@ -1,0 +1,1 @@
+sudo pkg install -g 'GhostBSD*-dev'
