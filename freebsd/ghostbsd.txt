@@ -1,1 +1,9 @@
 sudo pkg install -g 'GhostBSD*-dev'
+
+Put the following into your ~/.profile
+xmodmap -e "pointer = 1 2 3 4 5 6 7 0 9 10 11 12"
+
+clangd
+/usr/local/llvm18/bin/clangd
+/usr/local/llvm19/bin/clangd
+
