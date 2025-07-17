@@ -1,3 +1,5 @@
+sudo pkg install xf86-video-vmware xf86-input-vmmouse open-vm-tools
+
 sudo pkg install -g 'GhostBSD*-dev'
 
 Put the following into your ~/.profile
