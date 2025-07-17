@@ -9,3 +9,5 @@ clangd
 /usr/local/llvm18/bin/clangd
 /usr/local/llvm19/bin/clangd
 
+# add to ~/.xinirc
+VBoxClient --display
