@@ -11,3 +11,7 @@ clangd
 
 # add to ~/.xinirc
 VBoxClient --display
+
+sudo pkg install chromium
+
+sudo pkg install llvm18
