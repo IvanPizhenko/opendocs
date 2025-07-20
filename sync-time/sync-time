@@ -1,0 +1,5 @@
+#/bin/sh
+timedatectl set-ntp off
+sleep 1
+timedatectl set-ntp on
+
