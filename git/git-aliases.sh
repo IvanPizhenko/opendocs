@@ -22,8 +22,9 @@ git config --global alias.rmrb 'push origin --delete'
 git config --global alias.rmrt 'push origin --delete'
 # end
 
-# to list aliases
+# to list git aliases
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
+git config --global alias.la "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
 # special
 git config --global alias.setghname 'config user.name "Ivan Pizhenko"'
