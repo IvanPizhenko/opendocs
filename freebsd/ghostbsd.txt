@@ -15,3 +15,9 @@ VBoxClient --display
 sudo pkg install chromium
 
 sudo pkg install llvm18
+
+git config --global credential.helper with-kwallet
+
+git config --global credential.https://github.com.useHttpPath true
+git config --global credential.https://gitlab.com.useHttpPath true
+git config --global credential.https://bitbucket.org.useHttpPath true
