@@ -20,6 +20,7 @@ git config --global alias.rpo 'remote prune origin'
 git config --global alias.rpu 'remote prune upstream'
 git config --global alias.rmrb 'push origin --delete'
 git config --global alias.rmrt 'push origin --delete'
+git config --global alias.lsr 'ls-remote'
 # end
 
 # to list git aliases
