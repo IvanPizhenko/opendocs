@@ -29,6 +29,7 @@ git config --global alias.la "!git --no-pager config --get-regexp ^"^^alias\.^""
 
 :: special
 git config --global alias.setghname "config user.name ^"Ivan Pizhenko^""
+git config --global alias.setghuser "config user.name ^"Ivan Pizhenko^""
 git config --global alias.setghemail "config user.email ^"IvanPizhenko@users.noreply.github.com^""
 :: end special
 
