@@ -31,3 +31,11 @@ git config --global alias.la "!git --no-pager config --get-regexp ^"^^alias\.^""
 git config --global alias.setghname "config user.name ^"Ivan Pizhenko^""
 git config --global alias.setghemail "config user.email ^"IvanPizhenko@users.noreply.github.com^""
 :: end special
+
+:: Site settings
+git config --global credential.https://github.com.useHttpPath true
+git config --global credential.https://gitlab.com.useHttpPath true
+git config --global credential.https://bitbucket.org.useHttpPath true
+
+:: END
+
