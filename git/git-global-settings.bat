@@ -7,3 +7,5 @@ git config --global credential.https://bitbucket.org.useHttpPath true
 
 :: Store credentials
 git config --global credential.helper store
+
+:: end
