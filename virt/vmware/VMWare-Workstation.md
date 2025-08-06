@@ -4,7 +4,6 @@
 
 See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware Fusion, Workstation, or Player][1]
 
-
 ## Ubuntu
 
 1. Install VMWare tools. Open VMWare tools are preferred. More information at [Overview of VMware Tools][2] and [VMware support for open-vm-tools][3].
@@ -18,6 +17,22 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
    ```
 
 2. For proprietary VMWare Tools, see [Install VMware Tools in VMware products][4].
+
+## FreeBSD
+
+1. Install VMWare tools. Open VMWare tools are preferred. More information at [Overview of VMware Tools][2] and [VMware support for open-vm-tools][3].
+
+   ```shell
+   # For Desktop
+   sudo pkg install -y open-vm-tools
+   sudo kldload fusefs
+   echo "fusefs_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+
+   # For Server
+   sudo pkg install -y open-vm-tools-nox11
+   sudo kldload fusefs
+   echo "fusefs_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+   ```
 
 ## Links
 
