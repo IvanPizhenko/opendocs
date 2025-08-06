@@ -24,7 +24,7 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
 
    ```shell
    # For Desktop
-   sudo pkg install -y open-vm-tools
+   sudo pkg install -y xf86-video-vmware xf86-input-vmmouse open-vm-tools
    echo "fusefs_enable=\"YES\"" | sudo tee -a /etc/rc.conf
    echo "vmware_guestd_enable=\"YES\"" | sudo tee -a /etc/rc.conf
    sudo kldload fusefs
