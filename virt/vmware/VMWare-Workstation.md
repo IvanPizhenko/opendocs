@@ -20,7 +20,7 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
 
 ## FreeBSD
 
-1. Install VMWare tools. Open VMWare tools are preferred. More information at [Overview of VMware Tools][2] and [VMware support for open-vm-tools][3].
+1. Install VMWare tools. Open VMWare tools are preferred. More information at [Overview of VMware Tools][2] and [VMware support for Open VM Tools on FreeBSD][5].
 
    ```shell
    # For Desktop
@@ -44,3 +44,4 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
 [2]: https://knowledge.broadcom.com/external/article?articleNumber=315382
 [3]: https://knowledge.broadcom.com/external/article?articleNumber=313456
 [4]: https://knowledge.broadcom.com/external/article/315363
+[5]: https://knowledge.broadcom.com/external/article/342627/vmware-support-for-open-vm-tools-on-free.html
