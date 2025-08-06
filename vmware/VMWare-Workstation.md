@@ -36,6 +36,11 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
    echo "vmware_guestd_enable=\"YES\"" | sudo tee -a /etc/rc.conf
    sudo kldload fusefs
    sudo service vmware-guestd start
+
+   # Additional config (common)
+   echo "" | sudo tee -a /etc/fstab
+   echo "# procs"| sudo tee -a /etc/fstab
+   echo "proc    /proc           procfs          rw      0       0" | sudo tee -a /etc/fstab
    ```
 
 ## Links
