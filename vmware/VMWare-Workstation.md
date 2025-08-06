@@ -43,8 +43,6 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
    echo "proc    /proc           procfs          rw      0       0" | sudo tee -a /etc/fstab
    ```
 
-## Links
-
 [1]: https://knowledge.broadcom.com/external/article/341189/importing-virtual-machine-from-oracle-vi.html
 [2]: https://knowledge.broadcom.com/external/article?articleNumber=315382
 [3]: https://knowledge.broadcom.com/external/article?articleNumber=313456
