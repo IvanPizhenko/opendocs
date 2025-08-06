@@ -25,13 +25,17 @@ See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware 
    ```shell
    # For Desktop
    sudo pkg install -y open-vm-tools
-   sudo kldload fusefs
    echo "fusefs_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+   echo "vmware_guestd_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+   sudo kldload fusefs
+   sudo service vmware-guestd start
 
    # For Server
    sudo pkg install -y open-vm-tools-nox11
-   sudo kldload fusefs
    echo "fusefs_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+   echo "vmware_guestd_enable=\"YES\"" | sudo tee -a /etc/rc.conf
+   sudo kldload fusefs
+   sudo service vmware-guestd start
    ```
 
 ## Links
