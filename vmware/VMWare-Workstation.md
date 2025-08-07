@@ -2,7 +2,12 @@
 
 ## Migration to VMWare from VirtualBox
 
-See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware Fusion, Workstation, or Player][1]
+See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware Fusion, Workstation, 
+or Player][1]
+
+## General Guidance
+
+See support article [Install VMware Tools in VMware products][6].
 
 ## Ubuntu
 
@@ -45,8 +50,14 @@ You can refer to the ["Chapter 24 - Virtualization" in the FreeBSD handbook](htt
    echo "proc    /proc           procfs          rw      0       0" | sudo tee -a /etc/fstab
    ```
 
+## OpenIndiana (Solaris-like)
+
+Refer to [Installing VMware Tools in a Solaris virtual machine][7].
+
 [1]: https://knowledge.broadcom.com/external/article/341189/importing-virtual-machine-from-oracle-vi.html
 [2]: https://knowledge.broadcom.com/external/article?articleNumber=315382
 [3]: https://knowledge.broadcom.com/external/article?articleNumber=313456
 [4]: https://knowledge.broadcom.com/external/article/315363
 [5]: https://knowledge.broadcom.com/external/article/342627/vmware-support-for-open-vm-tools-on-free.html
+[6]: https://knowledge.broadcom.com/external/article?legacyId=1014294
+[7]: https://knowledge.broadcom.com/external/article/328233
