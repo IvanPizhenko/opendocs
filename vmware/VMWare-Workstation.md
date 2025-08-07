@@ -2,7 +2,7 @@
 
 ## Migration to VMWare from VirtualBox
 
-See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware Fusion, Workstation, 
+See support article:[Importing Virtual Machine from Oracle VirtualBox to VMware Fusion, Workstation,
 or Player][1]
 
 ## General Guidance
