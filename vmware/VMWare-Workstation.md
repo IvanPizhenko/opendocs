@@ -52,6 +52,7 @@ You can refer to the ["Chapter 24 - Virtualization" in the FreeBSD handbook](htt
 
 ## OpenIndiana (Solaris-like)
 
+Download [ISO Image](https://packages-prod.broadcom.com/tools/frozen/solaris/solaris.iso).
 Refer to [Installing VMware Tools in a Solaris virtual machine][7].
 
 [1]: https://knowledge.broadcom.com/external/article/341189/importing-virtual-machine-from-oracle-vi.html
