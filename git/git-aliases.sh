@@ -39,4 +39,7 @@ git config --global credential.https://github.com.useHttpPath true
 git config --global credential.https://gitlab.com.useHttpPath true
 git config --global credential.https://bitbucket.org.useHttpPath true
 
+# Store credentials, if you want to (off by default)
+# git config --global credential.helper store
+
 # END
