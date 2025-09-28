@@ -7,9 +7,9 @@
    mkdir -p "$HOME/.config/old-autostart-scripts"
    ```
 
-2. Create `~/.config/autostart/ssh-agent.desktop`.
+2. Create `$HOME/.config/autostart/ssh-agent.desktop` from template (change `/home/user/` to your actual home directory).
 
-3. Create  `$HOME/.config/old-autostart-scripts/ssh-agent.sh`
+3. Create  `$HOME/.config/old-autostart-scripts/ssh-agent.sh` using provided file.
 
 4. Fix permissions:
 
