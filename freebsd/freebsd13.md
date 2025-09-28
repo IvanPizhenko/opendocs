@@ -92,7 +92,7 @@ KDE: when logging in, avoid the Plasma (Wayland) … default that's presented by
 No sound:
 
 ```shell
-# add to
+# add to .shrc (??? - need to recheck)
 link cd0 cdrom
 link cd0 dvd
 link cd0 dvdr
@@ -104,7 +104,7 @@ link cd0 cdrw
 perm cd0 0666
 perm xpt0 0666
 perm pass0 0666
-perm pass1 066
+perm pass1 0666
 perm pass2 0666
 perm pass3 0666
 perm pass4 0666
