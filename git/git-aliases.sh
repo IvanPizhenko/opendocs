@@ -21,7 +21,7 @@ git config --global alias.rpu 'remote prune upstream'
 git config --global alias.rmrb 'push origin --delete'
 git config --global alias.rmrt 'push origin --delete'
 git config --global alias.lsr 'ls-remote'
-git config --global alias.chp 'cherry-pick'
+git config --global alias.cp 'cherry-pick'
 # end
 
 # to list git aliases
