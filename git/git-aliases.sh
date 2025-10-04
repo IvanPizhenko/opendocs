@@ -28,18 +28,4 @@ git config --global alias.chp 'cherry-pick'
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 git config --global alias.la "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
-# special
-git config --global alias.setghname 'config user.name "Ivan Pizhenko"'
-git config --global alias.setghuser 'config user.name "Ivan Pizhenko"'
-git config --global alias.setghemail 'config user.email "IvanPizhenko@users.noreply.github.com"'
-# end special
-
-# Site settings
-git config --global credential.https://github.com.useHttpPath true
-git config --global credential.https://gitlab.com.useHttpPath true
-git config --global credential.https://bitbucket.org.useHttpPath true
-
-# Store credentials, if you want to (off by default)
-# git config --global credential.helper store
-
 # END
