@@ -11,7 +11,7 @@ tdir=/usr/local/bin
 echo "Creating $tdir directory"
 install -d $tdir
 
-for f in gitwip gitfix; do
+for f in gitwip gitfix git-rconfig-gh git-rconfig-gl git-rconfig-bb; do
     echo "Installing $f into $tdir"
     install $f $tdir
 done
