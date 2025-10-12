@@ -118,8 +118,8 @@ parse_git_branch() {
 }
 
 if [ "$color_prompt" = yes ]; then
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(branch=$(parse_git_branch); if [ -n "$branch" ]; then echo " '"$__YELLOW__"'($branch)'"$__RESET__"'"; fi)\n\$ '
+  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(branch=$(parse_git_branch); if [ -n "$branch" ]; then echo " '"$__YELLOW__"'($branch)'"$__RESET__"'"; fi)\n\$ '
 else
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(branch=$(parse_git_branch); if [ -n "$branch" ]; then echo " ($branch)"; fi)\n\$ '
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(branch=$(parse_git_branch); if [ -n "$branch" ]; then echo " ($branch)"; fi)\n\$ '
 fi
 unset color_prompt force_color_prompt
