@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-# Site settings
+# Popular cloud repos
 git config --global credential.https://github.com.useHttpPath true
 git config --global credential.https://gitlab.com.useHttpPath true
 git config --global credential.https://bitbucket.org.useHttpPath true
+
+# Azure
 git config --global credential.https://dev.azure.com.useHttpPath true
 
 # AWS CodeCommit
