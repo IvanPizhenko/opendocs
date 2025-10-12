@@ -24,5 +24,5 @@ setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
 prompt='
-%n@%m %{$fg[green]%}%1~ %{$fg[yellow]%}$(git_branch_name)%{$reset_color%}
+%n@%m %{$fg_bold[green]%}%1~ %{$fg_bold[magenta]%}$(git_branch_name)%{$reset_color%}
 %# '
