@@ -1,0 +1,24 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "andrei1015+plasma@gmail.com",
+                "Name": "andrei1015"
+            },
+            {
+                "Email": "ivan.pizhenko@gmail.com",
+                "Name": "Ivan Pizhenko"
+            },
+        ],
+        "Category": "",
+        "Description": "Colourful-Ring-LightBlue-Splashscreen For Plasma 6 (port from https://store.kde.org/p/2002405)",
+        "Id": "Colourful-Ring-LightBlue-Splashscreen-Plasma6",
+        "License": "GPLv3",
+        "Name": "Colourful Ring Light Blue Plasma6",
+        "Website": "https://github.com/IvanPizhenko/opendocs/kde/splash-screens/Colourful-Ring-LightBlue-Splashscreen-Plasma6"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2"
+}
+
