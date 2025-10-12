@@ -1,0 +1,36 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/ivan/.zshrc'
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+autoload -U colors && colors
+
+export CLICOLOR=1
+
+# Find and set branch name var if in git repository.
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '('$branch')'
+  fi
+}
+
+# Enable substitution in the prompt.
+setopt prompt_subst
+
+# Config for prompt. PS1 synonym.
+prompt='
+%n@%m %{$fg_bold[green]%}%~ %{$fg_bold[magenta]%}$(git_branch_name)%{$reset_color%}
+%# '
