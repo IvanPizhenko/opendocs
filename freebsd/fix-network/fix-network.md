@@ -14,3 +14,5 @@ Then, on each KDE start, run it:
 ```shell
 fix-network
 ```
+
+For that, you can place `fix-network.desktop` into `$HOME/.config/autostart`.
