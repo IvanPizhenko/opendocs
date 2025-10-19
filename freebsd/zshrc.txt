@@ -1,0 +1,3 @@
+if [[ -f "$HOME/.ssh-agent.env" ]]; then
+  . "$HOME/.ssh-agent.env" >/dev/null
+fi
