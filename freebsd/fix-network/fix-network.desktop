@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/usr/local/bin/fix-network
+Icon=application-x-executable-script
+Name=fix-network
+Type=Application
+X-KDE-AutostartScript=true
