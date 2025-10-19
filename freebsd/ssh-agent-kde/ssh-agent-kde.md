@@ -17,7 +17,7 @@
    chmod +x "$HOME/.config/old-autostart-scripts/ssh-agent.sh"
    ```
 
-5. Add to .shrc and .bashrc
+5. Add to `.shrc`, `.bashrc`, `.zshrc`
 
    ```shell
    if [ -f "$HOME/.ssh-agent.env" ]; then
