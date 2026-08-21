@@ -14,5 +14,7 @@ git status
 git add -u
 git commit -m "${msg}"
 git push
-echo "Operation completed."
+
+echo ""
 date
+echo "Operation completed."

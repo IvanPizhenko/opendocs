@@ -4,7 +4,10 @@ function gitwip
 	git add -u
 	git commit -m wip
 	git push
+
+	Write-Output ""
 	date
+	Write-Output "Operation completed."
 }
 
 function gitwip2
@@ -12,7 +15,10 @@ function gitwip2
 	git status
 	git add -u
 	git commit -m wip
+
+	Write-Output ""
 	date
+	Write-Output "Operation completed."
 }
 
 function gitfix
@@ -21,7 +27,10 @@ function gitfix
 	git add -u
 	git commit -m fix
 	git push
+
+	Write-Output ""
 	date
+	Write-Output "Operation completed."
 }
 
 function gitfix2
@@ -30,5 +39,9 @@ function gitfix2
 	git add -u
 	git commit -m fix
 	git push
+
+
+	Write-Output ""
 	date
+	Write-Output "Operation completed."
 }

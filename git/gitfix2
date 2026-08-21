@@ -13,5 +13,7 @@ echo "Adding and pushing all changes in the all known modified files as [${msg}]
 git status
 git add -u
 git commit -m "${msg}"
-echo "Operation completed."
+
+echo ""
 date
+echo "Operation completed."
