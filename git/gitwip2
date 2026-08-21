@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+base_msg="wip"
+
+if [ $# -gt 0 ]; then
+  msg="${base_msg}: $1"
+else
+  msg="${base_msg}"
+fi
+
+echo "Adding and pushing all changes in the all known modified files as [${msg}]..."
+git status
+git add -u
+git commit -m "${msg}"
+echo "Operation completed."
+date
