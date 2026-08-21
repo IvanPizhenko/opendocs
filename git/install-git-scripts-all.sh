@@ -9,11 +9,11 @@ fi
 tdir=/usr/local/bin
 
 echo "Creating $tdir directory"
-install -d $tdir
+install -d "$tdir"
 
 for f in gitwip gitwip2 gitfix gitfix2 git-rconfig-gh git-rconfig-gl git-rconfig-bb; do
     echo "Installing $f into $tdir"
-    install $f $tdir
+    install "$f" "$tdir"
 done
 
 echo "Done."
