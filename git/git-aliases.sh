@@ -23,6 +23,7 @@ git config --global alias.rmrt 'push origin --delete'
 git config --global alias.lsr 'ls-remote'
 git config --global alias.cp 'cherry-pick'
 git config --global alias.sh stash
+git config --global alias.lg log
 # end
 
 # to list git aliases
