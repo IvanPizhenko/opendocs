@@ -22,7 +22,7 @@ git config --global alias.rmrb 'push origin --delete'
 git config --global alias.rmrt 'push origin --delete'
 git config --global alias.lsr 'ls-remote'
 git config --global alias.cp 'cherry-pick'
-git config --global alias.sh stash
+git config --global alias.sth stash
 git config --global alias.l log
 git config --global alias.lo log
 git config --global alias.lg log
