@@ -1,0 +1,46 @@
+# This file is derived from original file supplied as part of
+# Midnight commander and located at: /usr/share/mc/syntax/Syntax
+
+# This file describes which highlighting scheme is applied to a particular
+# file in mcedit.
+#
+#
+# System-wide files (this and syntax definitions) are located in
+# /usr/share/mc/syntax/ directory.
+#
+# User's files (this and syntax definitions) are located in
+# ~/.local/share/mc/syntax directory.
+#
+# If user's file is missing, system-wide one is used.
+#
+#
+# This file is rescanned on opening of every new editor file.
+#
+# Format of this file is following.
+#
+# Each entry consists of two lines: a "file" specification and the
+# corresponding highlighting definition ("include"). A file specification
+# can have two or three fields, each separated by white-space characters.
+#
+# The first field is a regular expression that is matched against the file
+# name. The second field is a description of the file type and is
+# currently unused. The third (optional) field is a regular expression
+# that is matched against the first line of the file. The first entry
+# that matches wins, that is, all the entries below are ignored.
+#
+# Certain characters must be quoted in these fields. These are space (\s),
+# tabs (\t), backslashes(\\), plus (\+) and asterisk (\*). Braces {} and
+# brackets [] must not be quoted in this file. However, they have a special
+# meaning when used in the actual syntax definitions.
+#
+# You can use the following colors in the syntax highlighting files:
+# black, blue, brightblue, brightcyan, brightgreen, brightmagenta,
+# brightred, brown, cyan, gray, green, lightgray, magenta, red, white,
+# yellow
+#
+
+file [Ss]yntax$ Syntax\sHighlighting\sdefinitions ^#\ssyntax\srules\sversion\s
+include syntax.syntax
+
+file ..\*\\.(?i:jsonc)$ JSONC\sFile
+include json.syntax
