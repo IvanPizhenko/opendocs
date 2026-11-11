@@ -26,6 +26,7 @@ git config --global alias.sth stash
 git config --global alias.l log
 git config --global alias.lo log
 git config --global alias.lg log
+git config --global alias.rb rebase
 # end
 
 # to list git aliases
