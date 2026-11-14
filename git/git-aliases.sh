@@ -27,6 +27,7 @@ git config --global alias.l log
 git config --global alias.lo log
 git config --global alias.lg log
 git config --global alias.rb rebase
+git config --global alias.rbi 'rebase -i'
 # end
 
 # to list git aliases
